@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         MyJokes jokes = new MyJokes();
         String joke = jokes.getJoke();
 
-        new EndpointsAsyncTask().execute(new Pair<Context, String>(this, "Manfred"));
+        new EndpointsAsyncTask().execute(this);
 
 //        Intent jokeIntent = new Intent(this,JokeActivity.class);
 //        jokeIntent.putExtra(Intent.EXTRA_TEXT, joke);
